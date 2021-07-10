@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frontend Mentor | Sunnyside agency landing page</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!------------ The Header Section ------------>
+
+  <header class="header-section">
+    <div class="navigation-container">
+      <div class="logo-top" id="logo-top">
+        <img src="images/logo.svg" alt="The sites logo">
+      </div>
+      <div class="menuItems" id="menuItems">
+        <nav class="navbar" id="navbar">
+          <ul>
+            <li><a href="">About</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">Projects</a></li>
+            <li><a href="" id="contactButton">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      <img src="images/icon-hamburger.svg" alt="A hamburger icon" class="menuIcon" id="menuIcon" onclick="toggle()">
+    </div>
+    <div class="hero">
+      <h1>We are creatives</h1>
+      <div class="arrow" id="arrow">
+        <img src="images/icon-arrow-down.svg" alt="A arrow pointing down">
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="about-section">
+      <div class="card-container">
+        <div class="card card-1">
+            <div class="cardImage">
+              <img src="images/mobile/image-transform.jpg" alt="An image of an egg">
+            </div>
+            <div class="card-text" id="transform">
+              <h2>Transform your brand</h2>
+              <p>
+                We are a full-service creative agency specializing in helping brands grow fast. Engage your clients through compelling visuals that do most of the marketing for you.
+              </p>
+              <a href="#" class="about-btn">Learn more</a>
+            </div>
+        </div>
+        <div class="card card-2">
+          <div class="cardImage">
+            <img src="images/mobile/image-stand-out.jpg" alt="An image of a cup">
+          </div>
+          <div class="card-text" id="standOut">
+            <h2>Stand out to the right audience</h2>
+            <p>
+              Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places.
+            </p>
+            <a href="#" class="about-btn">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="offers-section">
+      <div class="offerCards-container">
+        <div class="offerCard offerCard-1">
+          <h2>Graphic design</h2>
+          <p>
+            Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.
+          </p>
+        </div>
+        <div class="offerCard offerCard-2">
+          <h2>Photography</h2>
+          <p>
+            Increase your credibility by getting the most stunning, high-quality photos that improve your business image.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="testimonials-section">
+      <h3>Client testimonials</h3>
+      <div class="memberCards-wrapper">
+        <div class="memberCard emily">
+          <img src="images/image-emily.jpg" alt="A photo of Emily">
+          <p class="statement">
+            We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.
+          </p>
+          <h4>Emily R.</h4>
+          <p class="role">Marketing Director</p>
+        </div>
+        <div class="memberCard thomas">
+          <img src="images/image-thomas.jpg" alt="A photo of Thomas">
+          <p class="statement">
+            Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.
+          </p>
+          <h4>Thomas S.</h4>
+          <p class="role">Chief Operating Officer</p>
+        </div>
+        <div class="memberCard jennie">
+          <img src="images/image-jennie.jpg" alt="A photo of Jennie">
+          <p class="statement">
+            Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!
+          </p>
+          <h4>Jennie F.</h4>
+          <p class="role">Business Owner</p>
+        </div>
+      </div>
+    </section>
+    <section class="gallery-section">
+      <div class="gallery-container">
+        <img src="images/mobile/image-gallery-milkbottles.jpg" alt="An image of milkbottles" class="gallery-img">
+        <img src="images/mobile/image-gallery-orange.jpg" alt="An image of an orange" class="gallery-img">
+        <img src="images/mobile/image-gallery-cone.jpg" alt="An image of a cone" class="gallery-img">
+        <img src="images/mobile/image-gallery-sugar-cubes.jpg" alt="An image of sugarcubes" class="gallery-img">
+      </div>
+    </section>
+  </main>
+  <footer class="footer-section">
+    <div class="footer-container">
+      <div class="logo-bottom" id="logo-bottom">
+        <img src="images/logo.svg" alt="The site logo">
+      </div>
+      <div class="footerLinks-container">
+        <a href="" class="footerLinks">About</a>
+        <a href="" class="footerLinks">Services</a>
+        <a href="" class="footerLinks">Projects</a>
+      </div>
+      <div class="socialIcon-wrapper">
+        <div class="social-icon">
+          <a href="#"><img src="images/icon-facebook.svg" alt="A social platform icon"></a>
+        </div>
+        <div class="social-icon">
+          <a href="#"><img src="images/icon-instagram.svg" alt="A social platform icon"></a>
+        </div>
+        <div class="social-icon">
+          <a href="#"><img src="images/icon-twitter.svg" alt="A social platform icon"></a>
+        </div>
+        <div class="social-icon">
+          <a href="#"><img src="images/icon-pinterest.svg" alt="A social platform icon"></a>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Zaid Marrie</a>.
+    </div>
+  </footer>
+  <script src="main.js"></script>
+</body>
+</html>
