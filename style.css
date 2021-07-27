@@ -93,10 +93,14 @@
     .navbar{
         display: none;
     }
+
+    .show{
+        display: block;
+    }
     
     .navbar ul{
-        margin: 0 6%;
-        width: 88%;
+        margin: 0 5%;
+        width: 90%;
         height: 235px;
         background: var(--neutral-clr-light);
         display: flex;

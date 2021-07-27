@@ -1,13 +1,6 @@
-function toggle() {
-	
-	let menu = document.getElementById("navbar");
-	
-    if (menu.style.display === "block") {
-        menu.style.display = "none";
-    }
-    else {
-        menu.style.display = "block";
-    }
-}
+let menuItems = document.querySelector('.navbar');
+let menuButton = document.querySelector('#menuIcon');
 
-document.getElementById("menuIcon").addEventListener("click", toggle());
+menuButton.addEventListener('click', () => {
+    menuItems.classList.toggle('show');
+});
