@@ -1,0 +1,39 @@
+@use '../util' as *;
+
+.services {
+    text-align: center;
+    flex-direction: column;
+
+    @include breakpoint(large) {
+        flex-direction: row;
+    }
+
+    .card {
+        padding: em(310) em(20) em(40);
+        min-height: rem(470);
+        max-height: rem(590);
+        background-size: cover;
+
+        @include breakpoint(large) {
+            flex-basis: 50%;
+            background-position: center;
+            padding: em(320) em(75) em(40);
+        }
+    }
+}
+
+.photography {
+    background-image: url('../images/mobile/image-photography.jpg');
+
+    @include breakpoint(large) {
+        background-image: url('../images/desktop/image-photography.jpg');
+    }
+}
+
+.graphic-design {
+    background-image: url('../images/mobile/image-graphic-design.jpg');
+
+    @include breakpoint(large) {
+        background-image: url('../images/desktop/image-graphic-design.jpg');
+    }
+}

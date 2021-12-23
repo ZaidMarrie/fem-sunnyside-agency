@@ -1,0 +1,48 @@
+@use '../util' as *;
+
+.testimonials {
+    text-align: center;
+    padding: em(45) em(20);
+
+    .container {
+        flex-direction: column;
+        @include breakpoint(large) {
+            flex-direction: row;
+        }
+    }
+
+    .card {
+        max-width: 375px;
+        margin: em(15) auto 0;
+        padding: em(20) em(20) 0;
+
+        &__title {
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        &__text {
+            font-size: rem(16);
+        }
+    
+        &__img {
+            width: rem(45);
+            height: rem(45);
+            margin: 0 auto rem(26);
+            border-radius: 50%;
+        }
+    }
+
+    @include breakpoint(large) {
+        padding: em(80) em(45);
+    }
+}
+
+.member {
+    margin: 0.5em 0;
+}
+
+.company-role {
+    margin: 0;
+    font-size: rem(15);
+}

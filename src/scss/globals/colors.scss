@@ -1,7 +1,23 @@
 :root {
-    --accent: 176, 50%, 47%;
-    --accent-dark: 176, 72%, 28%;
+	--white: hsl(0, 0%, 100%);
+	--neutral-200: hsl(210, 4%, 67%);
+	--neutral-400: hsl(232, 10%, 55%);
+	--neutral-700: hsl(213, 9%, 39%);
+	--neutral-900: hsl(212, 27%, 19%);
 
-    --clr-900: 0, 0%, 0%;
-    --clr-500: 0, 0%, 48%;
+	--footer: hsl(168, 34%, 41%);
+	--photography-txt: hsl(198, 62%, 26%);
+	--graphic-txt: hsl(167, 40%, 24%);
+	--yellow: hsl(51, 100%, 49%);
+	--soft-red: hsl(7, 99%, 70%);
 }
+
+.text-100 { color: var(--white);}
+
+.text-200 { color: var(--neutral-200); }
+
+.text-400 { color: var(--neutral-400); }
+
+.text-700 { color: var(--neutral-700); }
+
+.text-900 { color: var(--neutral-900); }
