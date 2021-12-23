@@ -1,0 +1,19 @@
+@use '../util' as *;
+
+header {
+    height: 100vh;
+    padding: em(30) em(20);
+    text-align: center;
+    background-size: 100% 100%;
+    background-position: center;
+    background-image: url('../images/mobile/image-header.jpg');
+
+    @include breakpoint(large) {
+        background-image: url('../images/desktop/image-header.jpg');
+    }
+}
+
+.hero {
+    height: 100%;
+    flex-direction: column;
+}

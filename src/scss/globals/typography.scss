@@ -1,12 +1,32 @@
+@use '../util' as *;
+
+body {
+	font-weight: 600;
+	font-size: rem(18);
+}
+
 h1,
 h2,
 h3 {
 	margin-top: 0;
 	line-height: 1.1;
+	font-family: var(--ff-headings);
 }
 
 a,
 a:visited,
 a:active {
 	text-decoration: none;
+	text-transform: capitalize;
 }
+
+.title {
+	font-size: rem(55);
+	line-height: em(15);
+}
+
+.graphic-design {
+	color: var(--graphic-txt);
+}
+
+.photography { color: var(--photography-txt); }
