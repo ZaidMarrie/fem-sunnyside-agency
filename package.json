@@ -23,9 +23,13 @@
     "postcss": "^8.3.5",
     "sass": "^1.35.2"
   },
-  "browserslist": [
-    "last 1 version",
-    "IE 11",
-    "> 1%"
-  ]
+  "browserslist": ["last 1 version", "IE 11", "> 1%"],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZaidMarrie/sunnyside-agency_landing-page.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ZaidMarrie/sunnyside-agency_landing-page/issues"
+  },
+  "homepage": "https://github.com/ZaidMarrie/sunnyside-agency_landing-page#readme"
 }
