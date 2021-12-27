@@ -48,5 +48,4 @@ Thumbs.db
 # Development files #
 #####################
 node_modules/
-dist/
 design/
