@@ -48,6 +48,13 @@
                 left: 5%;
                 z-index: -5;
                 background-color: var(--yellow);
+                transition: 300ms ease-out;
+                opacity: 0.5;
+            }
+
+            &:hover::after,
+            &:focus::after {
+                opacity: 1;
             }
     
             @include breakpoint(large) {

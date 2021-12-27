@@ -1,0 +1,52 @@
+@use '../util' as *;
+
+.footer {
+    min-height: rem(270);
+    background-color: var(--footer);
+    justify-content: center;
+    flex-direction: column;
+
+    &__logo svg {
+        margin: em(35) 0;
+        fill: var(--graphic-txt);
+    }
+
+    &__links {
+        margin-bottom: em(60);
+        justify-content: center;
+    }
+
+    &__link {
+        margin: 0 em(20);
+        color: var(--graphic-txt);
+        text-transform: capitalize;
+        transition: 300ms ease-out;
+
+        &:hover,
+        &:focus {
+            color: var(--white);
+        }
+    }
+
+    &__social-links {
+        justify-content: center;
+    }
+
+    .social__link svg {
+        margin: 0 em(20) em(60);
+        fill: var(--graphic-txt);
+        transition: 300ms ease-out;
+
+        &:hover,
+        &:focus {
+            fill: var(--white);
+        }
+    }
+
+    .attribution { 
+        font-size: 11px; 
+        text-align: center;
+        margin-bottom: 1em;
+    }
+    .attribution a { color: hsl(228, 45%, 44%); }
+}
