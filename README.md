@@ -26,18 +26,12 @@ Users should be able to:
 
 ### Screenshot
 
-## Desktop View
-
 ![Screenshot 2021-07-11 at 12-23-39 Frontend Mentor Sunnyside agency landing page](https://user-images.githubusercontent.com/84665360/125191525-32ecd480-e243-11eb-9813-9b3269a3fb87.png)
-
-## Mobile View
-
-![Screenshot 2021-07-11 at 12-24-18 Frontend Mentor Sunnyside agency landing page](https://user-images.githubusercontent.com/84665360/125191558-60398280-e243-11eb-9e42-57a33c545647.png)
 
 ### Links
 
-- Solution URL: (https://www.frontendmentor.io/solutions/completely-responsive-mobile-first-site-for-sunnysideagency-challenge-ZvVMljXMA)
-- Live Site URL: (https://zaidmarrie.github.io/sunnyside-agency_landing-page/)
+- [Solution URL](https://www.frontendmentor.io/solutions/completely-responsive-mobile-first-site-for-sunnysideagency-challenge-ZvVMljXMA)
+- [Live Site URL](https://zaidmarrie.github.io/sunnyside-agency_landing-page/)
 
 ## My process
 
@@ -65,19 +59,18 @@ I added some snippets of code, see below:
 ```
 
 ```js
-function toggle () {
+const menuToggle = document.querySelector(".hamburger")
+const menu = document.querySelector(".nav__list")
 
-let menu = document.getElementById("navbar");
+menuToggle.addEventListener("click", toggleMenu)
 
-  if (menu.style.display === "block") {
-    menu.style.display = "none"
+function toggleMenu() {
+    if (menu.classList.contains("active")) {
+        menu.classList.remove("active")
+    } else {
+        menu.classList.add("active")
     }
-    else {
-      menu.style.display = "block"
-      }
 }
-
-document.getElementById("menuIcon").addEventListener("click", toggle());
 ```
 
 ### Useful resources
